@@ -3,7 +3,7 @@ module.exports = {
   testEnvironment: "node",
   moduleDirectories: ["node_modules", "src"],
   transform: {
-    ".+\\.ts$": "ts-jest",
+    "^.+\\.ts$": "ts-jest",
   },
-  testMatch: ["<rootDir>/tests/*/*.(test|spec).ts"],
+  testMatch: ["<rootDir>/tests/unit/**/*.spec.ts", "<rootDir>/tests/unit/**/*.test.ts"],
 };
